@@ -11,7 +11,12 @@
     <div class="wrapper" id="wrapper">
         
         <aside class="sidebar">
-            <header><h1>AMS</h1></header>
+            <header>        
+                <div class="logo">
+                    <h1>AMS</h1>&nbsp;&nbsp;&nbsp;
+                    <img src="img/icon-academic.png" alt="">
+               </div>
+            </header>
             
             <div class="menu">
                 <a href="" class="dashboard">Dashboard</a>
@@ -75,11 +80,10 @@
                         <td>Admin</td>
                         <td>Active</td>
                     </tr>
+                    
                 </table>
              </div>
-             
-
-
+        
 
             <!-- end of container -->
         </div>
@@ -125,7 +129,53 @@
                 </div>
                 <!-- end of form container -->
             </div>
-           
+
+            <!-- credit total -->
+            <p class="total-credit">Total Credit: 9</p>
+            <p class="remove-course">Remove Course</p>
+            <!-- filter program -->
+            <div class="filter-program">
+                <p><b>Filter by Programs:</b></p>
+                <select name="" id="" class="dropdown-content ">
+                    <option value="bsit">BSIT</option>
+                    <option value="bshm">BSHM</option>
+                    <option value="beed">BEED</option>
+                    <option value="bsed">BSED</option>
+                    <option value="bsba">BSBA</option>
+                    <option value="bscrim">BSCRIM</option>
+                </select>
+            </div>
+            <div class="course-table">
+
+                <div class="course-container">
+                     <table>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Code</th>
+                            <th>Description</th>
+                            <th>Credit</th>
+                        </tr>
+
+                        <tr>
+                            <td>WEB1</td>
+                            <td>WS301</td>
+                            <td>Free Eleective</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>System Analysis and Design</td>
+                            <td>IT307</td>
+                            <td>System Architectures</td>
+                            <td>3</td>
+                        </tr>
+                        
+                  
+                    </table>
+                </div>
+               
+                <!-- end of course table -->
+            </div>
 <!-- end of curriculum  -->
         </div>
 
@@ -135,7 +185,77 @@
                 <h1>Assign Schedules!</h1>
                 <p id="datetime2"></p>
             </header>
+
+            <div class="inputSched-container">
+
+                <div class="select-teacher">
+                    <p><b>Select Registered Teaher:</b></p>
+                    <select name="" id="" class="dropdown-content ">
+                        <option value="bsit">Angel Canete</option>
+                        <option value="bsit">Rohanna Villagracia</option>
+                        <option value="bsit">Mike Christian Cortez</option>
+                    </select>
+                </div>
+
+                <div class="select-day">
+                    <p><b>Select Day:</b></p>
+                    <select name="" id="" class="dropdown-content ">
+                        <option value="bsit">Monday</option>
+                        <option value="bsit">Tuesday</option>
+                        <option value="bsit">Wednesday</option>
+                        <option value="bsit">Thursday</option>
+                        <option value="bsit">Friday</option>
+                        <option value="bsit">Saturday</option>
+                    </select>
+                </div>
+
+                <div class="location-container">
+                    <label for="location"><b>Location</b></label><br>
+                    <input type="text" id="location">
+                </div>
+                
+                <div class="time-pick">
+                     <label for="time-select"><b>Select a time:</b></label><br>
+                     <input type="time" id="time-select" name="time-select">
+                </div>
+
+                <div class="confirmSched-btn">
+                    <button>Confirm Schedule</button>
+                </div>
+
+                <!-- end ofinputSched ontainer -->
+            </div>
             
+           
+            <div class="table-schedule">
+                <h3>Schedule</h3>
+                <div class="edit-sched">
+                    <p><b>Edit Schedule</b></p>
+                </div>
+                <div class="list-sched">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                        </tr>
+
+                        <tr>
+                            <td>Monday</td>
+                            <td>1:00 - 2:30 PM</td>
+                            <td>Main Building Computer Lab 4th Floor</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>3:30 - 5:00 PM</td>
+                            <td>Annex Building 4th Floor</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- end of Assign Container -->
         </div>
         <!-- end of wrapper -->
     </div>

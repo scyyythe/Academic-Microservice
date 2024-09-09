@@ -39,13 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 
     // live date and time   
-    var now = new Date();
-    var datetime = now.toLocaleString();
-
-  document.getElementById("datetime").innerHTML = datetime;
-  document.getElementById("datetime2").innerHTML = datetime;
-  document.getElementById("datetime0").innerHTML = datetime;
-
+    function updateClock() {
+        var now = new Date();
+        var datetime = now.toLocaleString();
+    
+        document.getElementById("datetime").innerHTML = datetime;
+        document.getElementById("datetime2").innerHTML = datetime;
+        document.getElementById("datetime0").innerHTML = datetime;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+    
 });
 
 

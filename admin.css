@@ -18,7 +18,13 @@ body, html {
     width: 1370px;
     height: 100vh;
 }
-
+.logo{
+    width: 100px;
+    display: flex;
+    img{
+        width: 50px;
+    }
+}
 .sidebar{
     padding: 10px;
     position: absolute;
@@ -158,8 +164,9 @@ body, html {
     position: relative;
     bottom: 60px;
     width: 1000px;
-    height: 100vh;
+    height: 310px;
     font-size: 15px;
+    overflow-y: auto;
         th, td {
             padding: 10px;
             background-color: #e0dcdc;
@@ -263,7 +270,7 @@ body, html {
     left: 500px;
 
     button{
-        width: 300px;
+        width: 320px;
         padding: 5px;
         border-radius: 20px;
         background-color: #a91515;
@@ -275,8 +282,214 @@ body, html {
 .register-btn button:hover{
     cursor: pointer;
 }
+.course-table{
+    width: 1050px;
+    height: 250px;
+    overflow-y: auto;
+    position: relative;
+    bottom: 10px;
+}
+.filter-program{
+    margin-top: 15px;
+    font-size: 12px;
+    width: 300px;
 
+    label{
+        margin-top: 10px;
+    }
+    select{
+        position: relative;
+        left: 150px;
+        bottom: 25px;
+        width: 160px;
+    }
 
+}
+.total-credit{
+    position: relative;
+    left: 880px;
+    top: 40px;
+}
+
+.remove-course{
+    position: relative;
+    top: 270px;
+    left: 880px;
+    color: #bc3131;
+    font-weight: bold;
+}
+.course-container{
+    position: relative;
+    bottom: 10px;
+    width: 1000px;
+    height: 240px;
+    font-size: 15px;
+        th, td {
+            padding: 10px;
+            background-color: #e0dcdc;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 15px; 
+        }
+        th {
+            font-weight: bold; 
+        }
+         table {
+        width: 100%;
+        border-collapse: separate; 
+        border-spacing: 10px;
+         }
+}
+
+/* ASSIGN SCHEDULE CSS */
+.inputSched-container{
+    height: 200px;
+    padding: 10px;
+  
+}
+
+.select-teacher{
+    position: relative;
+    top: 20px;
+    width: 300px;
+    font-size: 13px;
+    p{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .dropdown-content{
+        width: 200px;
+    }
+}
+
+.select-day{
+    position: relative;
+    top: 80px;
+    width: 300px;
+    p{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .dropdown-content{
+        width: 200px;
+    }
+}
+
+.location-container{
+    width: 500px;
+    position: relative;
+    left: 500px;
+    bottom: 35px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    
+    input{
+        width: 500px;
+        background-color: #f4f4f4;
+        border-radius: 20px;
+        border-style: none;
+        padding: 3px;
+        outline: none;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}
+
+.time-pick{
+    width: 500px;
+    position: relative;
+    left: 500px;
+    bottom: 35px;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+    input{
+        width: 200px;
+        background-color: #f4f4f4;
+        border-radius: 20px;
+        border-style: none;
+        text-align: left;
+        padding: 3px;
+        outline: none;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}
+
+.confirmSched-btn{
+    position: relative;
+    bottom:75px;
+    left: 800px;
+
+    button{
+        color: white;
+        background-color: #a91515;
+        padding: 4px;
+        font-size: 12px;
+        width: 200px;
+        border-style: none;
+        border-radius: 20px;
+
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+.edit-sched{
+    width: 150px;
+    position: relative;
+    left: 450px;
+    bottom: 40px;
+    p{
+        font-size: .8rem;
+        color: #861818;
+    }
+}
+.edit-sched:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.table-schedule {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        position: relative;
+        right: 500px;
+        margin-bottom: 20px;
+    }
+
+  
+}
+
+.list-sched{
+    position: relative;
+    bottom: 30px;
+    width: 1100px;
+    height: 250px;
+    font-size: 15px;
+    overflow-y: auto;
+        th, td {
+            padding: 10px;
+            background-color: #e0dcdc;
+            text-align: center;
+            border-radius: 10px; 
+        }
+        th{
+            background-color: #a91515;
+            color:white;
+        }
+    table {
+        width: 100%;
+        border-collapse: separate; 
+        border-spacing: 10px;
+    }
+}
+/* Responsive pc */
 @media (min-width:1500px){
     .wrapper{
         position: relative;
