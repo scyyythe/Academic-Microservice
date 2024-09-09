@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
    // sidebar links
-   const dashboardLink = document.querySelector('.menu a:nth-child(1)');
-   const curriculumLink = document.querySelector('.menu a:nth-child(2)');
-   const assignLink = document.querySelector('.menu a:nth-child(3)');
+   const dashboardLink = document.querySelector('.dashboard');
+   const curriculumLink = document.querySelector('.curriculum');
+   const assignLink = document.querySelector('.assign');
    
    // containers
    const dashboardContainer = document.getElementById('container');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("datetime").innerHTML = datetime;
   document.getElementById("datetime2").innerHTML = datetime;
   document.getElementById("datetime0").innerHTML = datetime;
-  
+
 });
 
 
