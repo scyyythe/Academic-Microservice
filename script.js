@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Dashboard
    dashboardLink.addEventListener('click', function(e) {
-       e.preventDefault(); // Prevent default link behavior
+       e.preventDefault(); 
        dashboardContainer.style.display = 'block';
        curriculumContainer.style.display = 'none';
        assignContainer.style.display='none';

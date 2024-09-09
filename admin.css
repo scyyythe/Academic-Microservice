@@ -61,10 +61,6 @@ body, html {
     left: 250px;
     padding: 20px;
 
-    h1{
-        font-size: 1.2rem;
-        margin-top: 20px;
-    }
 
     .small-box{
         margin-top: 20px;
@@ -191,6 +187,7 @@ body, html {
     padding: 20px;  
 
     header{
+        font-size: 12px;
         width: 1000px;
         display: flex;
         align-items: center;
@@ -200,4 +197,26 @@ body, html {
     p{
         font-size: .8rem;
     }
+}
+
+.curriculum-container header{
+    font-size: 12px;
+}
+
+.select-program{
+    position: relative;
+    top: 20px;
+
+    p{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:1500px){
+    .wrapper{
+        position: relative;
+        width: 1900px;
+        height: 100vh;
+    }
+    
 }
