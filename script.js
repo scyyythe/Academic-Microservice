@@ -1,20 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function toggleDropdown() {
-        var dropdownContent = document.querySelector('.dropdown-content');
-        if (dropdownContent.style.display === 'block') {
-            dropdownContent.style.display = 'none';
-        } else {
-            dropdownContent.style.display = 'block';
-        }
-    }
 
-    function selectUser(userType) {
-        let dropBtn = document.querySelector('.dropbtn');
-        dropBtn.textContent = userType; // Change the button text
-        document.querySelector('.dropdown-content').style.display = 'none'; // Hide the dropdown after selection
-    }
+   // sidebar links
+   const dashboardLink = document.querySelector('.menu a:nth-child(1)');
+   const curriculumLink = document.querySelector('.menu a:nth-child(2)');
+   const assignLink = document.querySelector('.menu a:nth-child(3)');
+   
+   // containers
+   const dashboardContainer = document.getElementById('container');
+   const curriculumContainer = document.getElementById('curriculum-container');
+   const assignContainer = document.getElementById('assign-container');
 
-    // Make the functions globally accessible
-    window.toggleDropdown = toggleDropdown;
-    window.selectUser = selectUser;
+   //  show only the dashboard and hide others
+   curriculumContainer.style.display = 'none';
+   assignContainer.style.display='none';
+
+   // Dashboard
+   dashboardLink.addEventListener('click', function(e) {
+       e.preventDefault(); // Prevent default link behavior
+       dashboardContainer.style.display = 'block';
+       curriculumContainer.style.display = 'none';
+       assignContainer.style.display='none';
+   });
+
+   //Curriculum Management
+   curriculumLink.addEventListener('click', function(e) {
+       e.preventDefault();
+       dashboardContainer.style.display = 'none';
+       curriculumContainer.style.display = 'block';
+       assignContainer.style.display='none';
+   });
+
+   // Assign Schedules
+   assignLink.addEventListener('click', function(e) {
+       e.preventDefault();
+       dashboardContainer.style.display = 'none';
+       curriculumContainer.style.display = 'none';
+       assignContainer.style.display='block';
+   });
+
+    // live date and time   
+    var now = new Date();
+    var datetime = now.toLocaleString();
+
+  document.getElementById("datetime").innerHTML = datetime;
+  document.getElementById("datetime2").innerHTML = datetime;
+  document.getElementById("datetime0").innerHTML = datetime;
+  
 });
+
+
+

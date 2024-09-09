@@ -7,7 +7,7 @@
     <title>Academic System Admin</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         
         <aside class="sidebar">
             <header><h1>AMS</h1></header>
@@ -20,13 +20,16 @@
             </div>
         </aside>
 
-        <div class="container">
-            <h1>Welcome, Admin!</h1>
+        <div class="container" id="container">
+            <header>
+                <h1>Welcome Admin!</h1>
+                <p id="datetime0"></p>
+            </header>
 
             <div class="small-box">
 
                 <div class="title">
-                    <p>Accounts Management</p>
+                    <p><b>Accounts Management</b></p>
                 </div>
 
                 <!-- dropDown -->
@@ -51,10 +54,54 @@
                 <div class="box">Pending Accounts: </div>
                 <div class="box">Total Accounts: </div>
             </div>
+            <!-- activate button -->
+            <div class="activate-btn">
+                <button>Activate</button>
+            </div>
+            <!-- table -->
+             <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Angel Canete</td>
+                        <td>angel</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                    </tr>
+                </table>
+             </div>
+             
+
+
 
             <!-- end of container -->
         </div>
+
+        <div class="curriculum-container" id="curriculum-container">
+            <header>
+                <h1>Manage your courses!</h1>
+                <p id="datetime"></p>
+            </header>
+
+<!-- end of curriculum  -->
+        </div>
+
+
+        <div class="assign-container" id="assign-container">
+            <header>
+                <h1>Assign Schedules!</h1>
+                <p id="datetime2"></p>
+            </header>
+        </div>
         <!-- end of wrapper -->
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
