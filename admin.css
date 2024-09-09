@@ -212,10 +212,75 @@ body, html {
     }
 }
 
+.container-form{
+    height: 220px;
+    font-size: 13px;
+}
+.input-form-left{
+    width: 300px;
+    position: relative;
+    top: 60px;
+
+    label{
+        margin-top: 10px;
+    }
+
+    input{
+        outline: none;
+        width: 300px;
+        background-color: #f4f4f4;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.input-form-right{
+    width: 300px;
+    position: relative;
+    left: 500px;
+    bottom: 125px;
+
+    label{
+        margin-top: 10px;
+    }
+
+    input{
+        outline: none;
+        width: 300px;
+        background-color: #f4f4f4;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.register-btn{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+
+    button{
+        width: 300px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: #a91515;
+        color: white;
+        border-style: none;
+    }
+}
+
+.register-btn button:hover{
+    cursor: pointer;
+}
+
+
 @media (min-width:1500px){
     .wrapper{
         position: relative;
-        width: 1900px;
+        width: 10px;
         height: 100vh;
     }
     

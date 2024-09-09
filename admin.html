@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="admin.css">
+    <link rel="shortcut icon" href="img/icon-academic.png" type="image/x-icon">
     <title>Academic System Admin</title>
 </head>
 <body>
@@ -89,7 +90,9 @@
                 <p id="datetime"></p>
             </header>
             
-            <!-- dropDown -->
+            <div class="container-form">
+
+        <!-- dropDown -->
             <div class="select-program">
                 <p><b>Select a program</b></p>
                 <select name="" id="" class="dropdown-content ">
@@ -100,8 +103,29 @@
                     <option value="bsba">BSBA</option>
                     <option value="bscrim">BSCRIM</option>
                 </select>
-
             </div>
+                <div class="input-form-left">
+                    <label for="courseName">Register Course Name</label><br>
+                    <input type="text" id="courseName"><br><br>
+
+                     <label for="courseCode">Enter Course Code</label><br>
+                    <input type="text" id="courseCode">
+                </div>
+                
+                <div class="input-form-right">
+                    <label for="courseName">Register Course Name</label><br>
+                    <input type="text" id="courseName"><br><br>
+
+                     <label for="courseCode">Enter Course Code</label><br>
+                    <input type="text" id="courseCode">
+                </div>
+
+                <div class="register-btn">
+                    <button>Register Course</button>
+                </div>
+                <!-- end of form container -->
+            </div>
+           
 <!-- end of curriculum  -->
         </div>
 
