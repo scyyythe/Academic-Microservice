@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    
+}
+body, html {
+    margin: 0,auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper{
+    position: relative;
+    width: 1370px;
+    height: 100vh;
+}
+
+.sidebar{
+    padding: 10px;
+    position: absolute;
+    width: 200px;
+    color: white;
+    height: 100vh;
+    background-color: #a91515;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        transition: .3s;
+        transition-property: background-color;
+    }
+    a:hover{
+        background-color:#bc3131;
+    }
+    .menu{
+        margin-top: 20px;
+        line-height: 4.5;
+        font-size:.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container{
+    width: 1100px;
+    height: 100vh;
+    position: relative;
+    left: 250px;
+    padding: 20px;
+
+    h1{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    .small-box{
+        margin-top: 20px;
+        font-size: 1rem;
+        width: 300px;
+        height: 100px;
+    }
+    .title{
+        width: 250px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #f4f4f4;
+    }
+
+}
+
+.dropdown {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    font-size: .9rem;
+    p{
+        margin-bottom: 10px;
+    }
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f4f4f4;
+    border-style: none;
+    padding: 3px;
+    min-width: 130px; 
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: block; 
+    line-height: 2;
+
+}
+
+.count{
+    position: absolute;
+    right: 100px;
+    bottom: 450px;
+    width: 650px;
+    height: 80px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: .9rem;
+    width: 250px;
+    height: 50px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ff3131, #ff914d);
+}
